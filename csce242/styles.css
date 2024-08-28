@@ -6,7 +6,7 @@ body {
 
 #contents {
     color: rgb(237, 159, 233);
-    background:#9ea3b6;
+    background:rgb(237, 159, 233);
     padding:25px;
     margin:20px auto;
     width:70%;
@@ -26,7 +26,7 @@ body {
 #main-links a {
     text-decoration: none; /*no underline*/
     color:#252b41;
-    background:#9ea3b6;
+    background:#ebecf2;
     padding:5px;
     margin:5px;
     border-radius:2px;
