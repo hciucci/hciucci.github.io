@@ -22,7 +22,7 @@ body {
     list-style-type: none; /*no bullets*/
     display:inline-block; /*display on one line*/
 }
-#main-nav a {
+#main-links a {
     text-decoration: none; /*no underline*/
     color:#252b41;
     background:#9ea3b6;
