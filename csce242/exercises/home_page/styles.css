@@ -4,21 +4,13 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#content {
-    background:#9ea3b6;
-    padding:25px;
-    margin:20px auto;
-    width:70%;
-    border-radius:10px;
-}
-
 /*Navigation*/
-#main-nav ul {
+#main-links ul {
     padding-left:0; /*removes left padding*/
     width:fit-content;
     margin:auto;
 }
-#main-nav li {
+#main-links li {
     list-style-type: none; /*no bullets*/
     display:inline-block; /*display on one line*/
 }
