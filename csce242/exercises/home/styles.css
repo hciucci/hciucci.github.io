@@ -4,6 +4,14 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+#content {
+    background:#9ea3b6;
+    padding:25px;
+    margin:20px auto;
+    width:70%;
+    border-radius:10px;
+}
+
 /*Navigation*/
 #main-links ul {
     padding-left:0; /*removes left padding*/
