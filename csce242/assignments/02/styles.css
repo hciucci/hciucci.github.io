@@ -12,6 +12,20 @@ body {
     border-radius:10px;
 }
 
+#images {
+    padding:25px;
+    margin:auto;
+    padding:10px;
+}
+
+.main, th, td {
+    padding:25px;
+    margin: 0 auto;
+    border: 3px solid #100e43;
+    border-collapse: collapse;
+    background-color: #8685c4;
+}
+
 /*Navigation*/
 #main-nav ul {
     padding-left:0; /*removes left padding*/
