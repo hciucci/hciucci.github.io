@@ -42,6 +42,8 @@ main {
 
 .assignment-list {
     display: flex;
+    justify-content: space-between; /* Change from space-around to space-between */
+    align-items: stretch; /* Ensures all cards are the same height */
     flex-wrap: wrap;
 }
 
@@ -76,7 +78,7 @@ footer {
     background-color: #ffffff;
 }
 
-/* Make the entire assignment card clickable */
+/* make the entire assignment card clickable */
 .assignment {
     text-decoration: none;
     color: inherit;
@@ -89,7 +91,7 @@ footer {
     border-radius: 4px;
 }
 
-/* Media Query for smaller screens */
+/* media query */
 @media (max-width: 768px) {
     .assignment-list {
         flex-direction: column;
