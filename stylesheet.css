@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1.2rem;
+    color: #777;
+}
+
+main {
+    padding: 20px;
+}
+
+.assignments {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.assignments h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assignment-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assignment {
+    background-color: #e6eefc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.assignment img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.assignment h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.assignment p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+/* Make the entire assignment card clickable */
+.assignment {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.assignment img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .assignment-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
