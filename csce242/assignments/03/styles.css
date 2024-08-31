@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6e9ef; /* Light blueish background for the body */
+    background-color: #f0ead6; /* tan background color */
 }
 
-header, footer {
-    background-color: #4682b4; /* Steel blue color for header and footer */
-    color: white;
+header {
+    background-color: #F0EAD6; /* tan again */
+    color: #8DBDBD;
     text-align: center;
     padding: 10px 0;
 }
@@ -19,6 +19,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    background-color: #d98282;
 }
 
 nav ul li a {
@@ -27,63 +28,83 @@ nav ul li a {
     padding: 10px 20px;
 }
 
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
 main {
     display: flex;
-    flex-wrap: wrap;
     padding: 20px;
-    background-color: #f0ead6; /* Light tan color for the main background */
+    justify-content: space-between;
 }
 
 .content {
-    flex: 3;
     display: flex;
     flex-wrap: wrap;
+    flex: 2;
     gap: 20px;
+    background-color: #A4BFB8; /* blueish background for content */
+    padding: 20px;
 }
 
 .content article {
-    flex: 1 1 calc(50% - 20px);
-    background-color: #87cefa; /* Light sky blue color for content articles */
+    flex: 1 1 20%;
+    background-color: #A4BFB8; /* slightly lighter blue */
     padding: 20px;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
 .sidebar {
-    flex: 1;
-    background-color: #4682b4; /* Steel blue for the sidebar */
+    flex: 0.5;
+    background-color: #d98282; /* red for the sidebar */
     padding: 20px;
     box-sizing: border-box;
     color: white;
-    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.sidebar .links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .links ul li {
+    margin-bottom: 10px;
 }
 
 .ideas {
     margin: 20px;
-    background-color: #f0ead6; /* Light tan background for ideas section */
+    background-color: #f0ead6; /* light tan background */
     padding: 20px;
     border-radius: 5px;
 }
 
 .ideas article {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .ideas div {
-    flex: 1;
     display: flex;
     align-items: center;
+    background-color: #b0d4d4;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #4682b4; /* Consistent steel blue for footer */
+    background-color: #d98282; /* consistent red for footer */
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
-/* Media Query for smaller screens */
+/* media query for smaller screens */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
