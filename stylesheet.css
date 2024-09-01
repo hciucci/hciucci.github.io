@@ -42,8 +42,8 @@ main {
 
 .assignment-list {
     display: flex;
-    justify-content: space-between; /* Change from space-around to space-between */
-    align-items: stretch; /* Ensures all cards are the same height */
+    justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
