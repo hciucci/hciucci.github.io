@@ -1,0 +1,282 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+}
+
+.top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.quick-links li {
+    display: inline;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 0.85em;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background-color: #660000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: #660000;
+    padding: 10px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #ffc107; /* Optional hover effect */
+}
+
+/* Header Section */
+header {
+    margin-top: 60px; /* To offset fixed navbar */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    background-image: url('https://place-hold.it/1920x600');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+/* Graduate School Admissions Banner */
+.admissions-banner {
+    background-color: #660000;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #660000;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #555;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.programs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.programs .text-content {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.programs .image-content {
+    flex: 1;
+    text-align: right;
+    max-width: 600px;
+}
+
+.programs img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #660000;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Investment Section */
+.investment {
+    background-color: #f7f7f7;
+}
+
+.investment a {
+    margin-top: 10px;
+}
+
+/* Paying Section */
+.paying-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.option {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.option img {
+    max-width: 100%;
+    height: auto;
+}
+
+.option h3 {
+    margin: 10px 0;
+    color: #660000;
+    font-size: 1.3em;
+}
+
+.option p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.option a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #660000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
