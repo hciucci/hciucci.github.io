@@ -224,6 +224,21 @@ section p {
 }
 
 /* Paying Section */
+.paying-title {
+    color: #660000;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Georgia";
+}
+
+.paying-desc {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .paying-options {
     display: flex;
     justify-content: space-around;
@@ -238,9 +253,12 @@ section p {
     margin: 20px;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
+}
+
+.option:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
 .option img {
@@ -268,13 +286,82 @@ section p {
     font-weight: bold;
 }
 
+/* Under Payment */
+/* Below Payment Section (Take the Next Step) */
+.below-payment {
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+    position: relative; /* Allows the image to overflow out of the section */
+    height: 473px;
+}
+
+.below-payment-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: visible; /* Ensures the image can peek out of the container */
+}
+
+.below-payment-image {
+    flex: 1;
+    position: relative;
+    z-index: 1; /* Ensure the image is above the background */
+    transform: translateX(-50px); /* Moves the image to the left, peeking out */
+    transform: translateY(-70px);
+}
+
+.below-payment-image img {
+    width: 400px; /* Smaller size for the image */
+    height: auto;
+    object-fit: cover;
+    flex: 1;
+    position: relative;
+    z-index: 1; /* Ensure the image is above the background */
+    transform: translateY(-50px); /* Moves the image upward */
+}
+
+.below-payment-text {
+    flex: 1;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.below-payment-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.below-payment-text p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.below-payment-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #660000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: white;
+    margin-top: 25px;
+}
+
+.below-payment-btn:hover {
+    background-color: #990000;
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
 footer p {
