@@ -27,7 +27,8 @@ main {
     padding: 20px;
 }
 
-.assignments {
+/* Shared Styles for Assignments and Projects */
+.section {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
@@ -35,70 +36,70 @@ main {
     border-radius: 8px;
 }
 
-.assignments h2 {
+.section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.assignment-list {
+.list {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
 }
 
-.assignment {
+.card {
     background-color: #e6eefc;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
     width: 300px;
     text-align: center;
+    text-decoration: none;
+    color: inherit;
 }
 
-.assignment img {
+.card img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.assignment h3 {
+.card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-.assignment p {
+.card p {
     font-size: 0.9rem;
     color: #555;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #ffffff;
 }
 
-/* make the entire assignment card clickable */
-.assignment {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+/* Specific to Assignments Section */
+.assignments {
+    background-color: #fff;
 }
 
-.assignment img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
+/* Specific to Projects Section */
+.projects {
+    background-color: #f9f9f9; /* Slightly different background for distinction */
 }
 
 /* media query */
 @media (max-width: 768px) {
-    .assignment-list {
+    .list {
         flex-direction: column;
         align-items: center;
     }
 
-    .assignment {
+    .card {
         width: 90%;
         margin-bottom: 20px;
     }

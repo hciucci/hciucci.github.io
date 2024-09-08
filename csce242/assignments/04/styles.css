@@ -8,7 +8,7 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: white;
 }
 
 /* Top Bar */
@@ -39,7 +39,7 @@ body {
 .quick-links a {
     color: white;
     text-decoration: none;
-    font-size: 0.85em;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -102,12 +102,12 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ffc107; /* Optional hover effect */
+    color: #ffc107;
 }
 
 /* Header Section */
 header {
-    margin-top: 60px; /* To offset fixed navbar */
+    margin-top: 60px;
 }
 
 .hero {
@@ -117,12 +117,6 @@ header {
     background-image: url('https://place-hold.it/1920x600');
     background-size: cover;
     background-position: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .header-content {
@@ -143,15 +137,39 @@ header {
     font-size: 1.2em;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
 /* Graduate School Admissions Banner */
 .admissions-banner {
     background-color: #660000;
     color: white;
-    padding: 40px 0;
+    font-size: 38px;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 0 auto;
     text-align: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 20px 0;
+    z-index: 2;
+}
+
+/* Below Admissions Section */
+#below-admissions h3 {
+    text-align: left;
+    max-width: 750px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+#below-admissions p {
+    text-align: left;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 35px;
 }
 
 /* Section Styles */
@@ -286,14 +304,12 @@ section p {
     font-weight: bold;
 }
 
-/* Under Payment */
 /* Below Payment Section (Take the Next Step) */
 .below-payment {
     background-color: black;
     color: white;
     padding: 60px 0;
-    position: relative; /* Allows the image to overflow out of the section */
-    height: 473px;
+    text-align: center;
 }
 
 .below-payment-content {
@@ -302,25 +318,18 @@ section p {
     align-items: center;
     max-width: 1500px;
     margin: 0 auto;
-    overflow: visible; /* Ensures the image can peek out of the container */
 }
 
 .below-payment-image {
     flex: 1;
-    position: relative;
-    z-index: 1; /* Ensure the image is above the background */
-    transform: translateX(-50px); /* Moves the image to the left, peeking out */
-    transform: translateY(-70px);
+    text-align: center;
 }
 
 .below-payment-image img {
-    width: 400px; /* Smaller size for the image */
+    width: 100%;
+    max-width: 450px;
     height: auto;
     object-fit: cover;
-    flex: 1;
-    position: relative;
-    z-index: 1; /* Ensure the image is above the background */
-    transform: translateY(-50px); /* Moves the image upward */
 }
 
 .below-payment-text {
@@ -366,4 +375,34 @@ footer {
 
 footer p {
     font-size: 0.9em;
+}
+
+/* Responsive Design: Media Queries for smaller screens */
+@media (max-width: 1024px) {
+    .admissions-banner {
+        font-size: 2.5em;
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admissions-banner {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+
+    .below-payment-content {
+        flex-direction: column;
+    }
+
+    .below-payment-image {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admissions-banner {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
 }
