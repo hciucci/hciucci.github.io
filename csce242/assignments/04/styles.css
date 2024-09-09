@@ -1,51 +1,68 @@
-/* General Reset */
+:root {
+    --primary-color: #660000;
+    --secondary-color: #990000;
+    --accent-color: #ffc107;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --light-grey-color: #f7f7f7;
+    --grey-color: #555555;
+}
+
+/* general reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* body */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
-/* Top Bar */
 .top-bar {
-    background-color: black;
-    color: white;
-    padding: 5px 0;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 10px 0;
 }
 
 .top-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: right;
+    gap: 20px;
+}
+
+/* style for logo */
+.top-bar .logo {
+    align-items: left;
+}
+
+.top-bar .logo img {
+    max-height: 40px;
+    align-items: left;
 }
 
 .quick-links {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-.quick-links li {
-    display: inline;
+    gap: 10px;
 }
 
 .quick-links a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
+    align-items: right;
 }
 
 .search-bar {
     display: flex;
-    align-items: center;
+    align-items: right;
+    margin-left: auto;
 }
 
 .search-bar input {
@@ -57,17 +74,17 @@ body {
 }
 
 .search-bar button {
-    background-color: #660000;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
 }
 
-/* Main Navigation */
+/* main navigation */
 .main-nav {
-    background-color: #660000;
+    background-color: var(--primary-color);
     padding: 10px 0;
 }
 
@@ -94,7 +111,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -102,10 +119,10 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ffc107;
+    color: var(--accent-color);
 }
 
-/* Header Section */
+/* header section */
 header {
     margin-top: 60px;
 }
@@ -124,7 +141,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -144,19 +161,21 @@ header {
     z-index: 1;
 }
 
-/* Graduate School Admissions Banner */
+/* graduate school admissions banner */
 .admissions-banner {
-    background-color: #660000;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-size: 38px;
     padding: 10px 30px;
     display: inline-block;
-    margin: 0 auto;
+    position: relative;
     text-align: center;
     z-index: 2;
+    margin-left: 200px;
+    margin-right: 50px;
 }
 
-/* Below Admissions Section */
+/* below admissions section */
 #below-admissions h3 {
     text-align: left;
     max-width: 750px;
@@ -172,22 +191,22 @@ header {
     margin-top: 35px;
 }
 
-/* Section Styles */
+/* section styles */
 section {
-    background-color: white;
-    margin: 20px 0;
-    padding: 40px 20px;
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0 20px;
     text-align: center;
 }
 
 section h2 {
     font-size: 2em;
-    color: #660000;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
 section p {
-    color: #555;
+    color: var(--grey-color);
     font-size: 1.1em;
     max-width: 800px;
     margin: 0 auto;
@@ -196,9 +215,11 @@ section p {
 
 .programs {
     display: flex;
+    color: var(--white-color);
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
+    background-color: var(--primary-color);
 }
 
 .programs .text-content {
@@ -206,6 +227,12 @@ section p {
     padding-left: 20px;
     text-align: left;
     max-width: 600px;
+    color: var(--white-color);
+}
+
+.programs .text-content h2,
+.programs .text-content p {
+    color: var(--white-color);
 }
 
 .programs .image-content {
@@ -224,26 +251,26 @@ section p {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #660000;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Investment Section */
+/* investment section */
 .investment {
-    background-color: #f7f7f7;
+    background-color: var(--light-grey-color);
 }
 
 .investment a {
     margin-top: 10px;
 }
 
-/* Paying Section */
+/* paying section */
 .paying-title {
-    color: #660000;
+    color: var(--primary-color);
     font-size: 30px;
     margin-bottom: 20px;
     font-family: "Georgia";
@@ -269,7 +296,7 @@ section p {
     flex: 1;
     max-width: 300px;
     margin: 20px;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 20px;
     border-radius: 8px;
     text-align: left;
@@ -286,30 +313,30 @@ section p {
 
 .option h3 {
     margin: 10px 0;
-    color: #660000;
+    color: var(--primary-color);
     font-size: 1.3em;
 }
 
 .option p {
     font-size: 1em;
-    color: #555;
+    color: var(--grey-color);
     line-height: 1.5;
 }
 
 .option a {
     display: inline-block;
     margin-top: 10px;
-    color: #660000;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Below Payment Section (Take the Next Step) */
+/* below payment section */
 .below-payment {
-    background-color: black;
-    color: white;
-    padding: 60px 0;
+    background-color: var(--black-color);
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .below-payment-content {
@@ -317,7 +344,6 @@ section p {
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    margin: 0 auto;
 }
 
 .below-payment-image {
@@ -341,68 +367,168 @@ section p {
 .below-payment-text h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: white;
+    color: var(--white-color);
 }
 
 .below-payment-text p {
     font-size: 1.2em;
-    color: white;
+    color: var(--white-color);
 }
 
 .below-payment-btn {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #660000;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    border-color: white;
+    border-color: var(--white-color);
     margin-top: 25px;
 }
 
 .below-payment-btn:hover {
-    background-color: #990000;
+    background-color: var(--secondary-color);
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* footer styles */
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 40px 0px;
+    margin-top: 0;
 }
 
-footer p {
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--white-color);
+    padding-bottom: 10px;
+    color: var(--white-color);
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: var(--white-color);
+    text-decoration: none;
     font-size: 0.9em;
 }
 
-/* Responsive Design: Media Queries for smaller screens */
-@media (max-width: 1024px) {
-    .admissions-banner {
-        font-size: 2.5em;
-        padding: 15px 25px;
-    }
+.footer-column ul li a:hover {
+    text-decoration: underline;
 }
 
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--white-color);
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+.footer-bottom a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* media query */
 @media (max-width: 768px) {
-    .admissions-banner {
-        font-size: 2em;
-        padding: 10px 20px;
+    .top-container,
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .below-payment-content {
+    .footer-links {
         flex-direction: column;
     }
 
-    .below-payment-image {
+    .footer-column {
         margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 15px;
     }
 }
 
 @media (max-width: 480px) {
+    .top-bar .logo img {
+        max-height: 30px;
+    }
+
+    .quick-links a {
+        font-size: 11px;
+    }
+
     .admissions-banner {
-        font-size: 1.5em;
-        padding: 10px 15px;
+        font-size: 28px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .below-payment-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .below-payment-text {
+        padding-left: 0;
+        text-align: center;
     }
 }
