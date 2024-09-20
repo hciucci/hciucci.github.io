@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F1F2E9;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+#menu-bar {
+    position: relative;
+    display: inline-block;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#menu-items a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+}
+
+#menu-items.hidden {
+    display: none;
+}
+
+/* Color Slider Section */
+#color-slider-section {
+    margin: 20px 0;
+}
+
+#colorSlider {
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Picture Chooser Section */
+#picture-chooser-section {
+    margin: 20px 0;
+}
+
+#pictureDisplay img {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav {
+        display: block;
+        text-align: left;
+    }
+    
+    #menu-items {
+        display: block;
+    }
+}
