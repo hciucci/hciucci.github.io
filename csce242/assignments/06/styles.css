@@ -1,4 +1,4 @@
-/* General Styling */
+/* general layout and alignment */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,10 +7,12 @@ body {
     padding: 20px;
 }
 
+/* header section */
 header {
     margin-bottom: 20px;
 }
 
+/* menu toggle */
 #menu-bar {
     position: relative;
     display: inline-block;
@@ -27,11 +29,12 @@ header {
     padding: 0 10px;
 }
 
+/* hide elements */
 #menu-items.hidden {
     display: none;
 }
 
-/* Color Slider Section */
+/* color slider section */
 #color-slider-section {
     margin: 20px 0;
 }
@@ -44,7 +47,7 @@ header {
     display: none;
 }
 
-/* Picture Chooser Section */
+/* picture chooser section */
 #picture-chooser-section {
     margin: 20px 0;
 }
@@ -54,14 +57,15 @@ header {
     max-width: 300px;
 }
 
-/* Responsive */
+/* responsive styling */
 @media (max-width: 600px) {
-    nav {
+    #menu-bar {
         display: block;
-        text-align: left;
+        text-align: center;
     }
-    
+
     #menu-items {
         display: block;
+        margin-top: 10px;
     }
 }
