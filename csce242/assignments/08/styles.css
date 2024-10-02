@@ -1,0 +1,37 @@
+/* gallery styling */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container {
+    margin: 10px;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* title and description styling */
+#title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#description {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .image-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
