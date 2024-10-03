@@ -1,0 +1,473 @@
+:root {
+    --background-color: #0b0b0b;
+    --text-color: #d1c4e9;
+    --accent-color: #6a1b9a;
+    --header-background: #1a1a1a;
+    --link-color: #d1c4e9;
+    --text-heading: #834a8b;
+    --search-bg: #1a1a1a;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* General Navigation Styling */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    padding: 16px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+header input {
+    padding: 8px;
+    background-color: var(--search-bg);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+/* nav link styling */
+header nav ul li a.active {
+    background-color: var(--accent-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header nav ul li a.active:hover {
+    background-color: var(--text-heading);
+}
+
+/* Hamburger Menu Styles */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    padding: 16px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Hide the menu initially when not toggled */
+.navbar ul {
+    display: none;
+}
+
+/* Show the menu when active */
+.navbar ul.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#menuToggle {
+    display: block;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: var(--link-color);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+#menuToggle input:checked ~ ul {
+    display: flex;
+}
+
+#menuToggle input:checked ~ span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menuToggle input:checked ~ span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuToggle input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+
+    #menuToggle input:checked ~ ul {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        background-color: var(--header-background);
+        text-align: center;
+        border-bottom: 1px solid var(--accent-color);
+    }
+
+    .navbar ul li a:hover {
+        background-color: var(--accent-color);
+    }
+}
+
+/* styling for home page */
+.home-page .hero {
+    text-align: center;
+    padding: 48px 16px;
+    background-color: var(--header-background);
+}
+.home-page .hero h1 {
+    font-size: 40px;
+    color: var(--text-heading);
+}
+
+.home-page .hero p {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 16px;
+    font-size: 19px;
+}
+
+.home-page .how-it-works {
+    text-align: center;
+    padding: 32px;
+}
+
+.home-page .how-it-works h2 {
+    font-size: 32px;
+    color: var(--text-heading);
+    margin-bottom: 32px;
+}
+
+.home-page .features {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.home-page .feature {
+    background-color: var(--header-background);
+    padding: 24px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.home-page .feature h3 {
+    color: var(--accent-color);
+    margin-bottom: 16px;
+}
+
+/* Ready to Get Started section */
+.get-started {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--header-background);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.get-started h2 {
+    color: var(--text-heading);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.get-started p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.get-started-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.get-started-links a {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.get-started-links a:hover {
+    background-color: var(--text-heading);
+}
+
+/* Artists page styles */
+.artists-page {
+    padding: 32px;
+}
+
+.artists-page h2 {
+    text-align: center;
+    color: var(--text-heading);
+    margin-bottom: 32px;
+}
+
+.artists-page .artist-grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.artists-page .artist-item {
+    width: 200px;
+    background-color: var(--header-background);
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.artists-page .artist-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.artists-page .artist-item p {
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+/* Music page styling */
+.music-page {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.music-page h2 {
+    text-align: center;
+    color: var(--text-heading);
+    margin-bottom: 30px;
+}
+
+/* music list styling */
+.music-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-background);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.music-item img {
+    width: 100px; /* Adjust this value to increase size */
+    border-radius: 10px; /* Keep the border-radius for consistency */
+    margin-right: 20px; /* Adjust space between image and text if needed */
+}
+
+.music-info h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.music-info p {
+    margin: 4px 0;
+    color: var(--text-color);
+}
+
+.music-info p strong {
+    color: var(--text-heading);
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: var(--header-background);
+    color: var(--text-color);
+}
+
+/* Reviews page styling */
+.reviews-page {
+    padding: 32px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.reviews-page h2 {
+    text-align: center;
+    color: var(--text-heading);
+    margin-bottom: 24px;
+}
+
+.review-item {
+    background-color: var(--header-background);
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.review-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.review-item p {
+    color: var(--text-color);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.review-item p strong {
+    color: var(--text-heading);
+}
+
+/* specific styles for About Us and Contact Us sections */
+.about-page .about-us, .about-page .contact-us {
+    padding: 32px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-page .about-us h2, .about-page .contact-us h2 {
+    text-align: center;
+    color: var(--text-heading);
+    margin-bottom: 24px;
+}
+
+.about-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--header-background);
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.about-page .contact-form label {
+    color: var(--text-color);
+}
+
+.about-page .contact-form input, .about-page .contact-form textarea {
+    padding: 12px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.about-page .contact-form button {
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-page .contact-form button:hover {
+    background-color: var(--text-heading);
+}
+
+/* media query */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* nav */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header input {
+        width: 80%;
+    }
+
+    .home-page .hero {
+        padding: 24px 8px;
+    }
+
+    .home-page .hero h1 {
+        font-size: 30px;
+    }
+
+    .home-page .hero p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    /* features section */
+    .home-page .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-page .feature {
+        width: 90%;
+    }
+
+    /* Artists page */
+    .artists-page .artist-grid {
+        flex-direction: column; /* stacks artists vertically */
+        gap: 20px;
+    }
+
+    .artists-page .artist-item {
+        width: 90%;
+    }
+
+    /* Contact Form */
+    .about-page .contact-form {
+        padding: 16px;
+    }
+
+    .about-page .contact-form input, .about-page .contact-form textarea {
+        width: 100%;
+    }
+
+    /* footer */
+    footer {
+        padding: 12px;
+    }
+}

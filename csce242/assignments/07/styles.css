@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #270741;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #445b9c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #4b9b8f;
+}
+
+h3 {
+    color: #d07171;
+}
+
+#starCanvas {
+    margin-top: 20px;
+    border: 2px solid #4b9b8f;
+    background-color: #270741;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+canvas {
+    width: 400px;
+    height: 400px;
+}

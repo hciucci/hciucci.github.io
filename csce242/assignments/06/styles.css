@@ -1,0 +1,71 @@
+/* general layout and alignment */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F1F2E9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* header section */
+header {
+    margin-bottom: 20px;
+}
+
+/* menu toggle */
+#menu-bar {
+    position: relative;
+    display: inline-block;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#menu-items a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* hide elements */
+#menu-items.hidden {
+    display: none;
+}
+
+/* color slider section */
+#color-slider-section {
+    margin: 20px 0;
+}
+
+#colorSlider {
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* picture chooser section */
+#picture-chooser-section {
+    margin: 20px 0;
+}
+
+#pictureDisplay img {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+/* responsive styling */
+@media (max-width: 600px) {
+    #menu-bar {
+        display: block;
+        text-align: center;
+    }
+
+    #menu-items {
+        display: block;
+        margin-top: 10px;
+    }
+}

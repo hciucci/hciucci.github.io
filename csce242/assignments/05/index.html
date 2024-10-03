@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="count-column" onclick="incrementCount()">
+            <h3>Count</h3>
+            <div id="count">0</div>
+        </div>
+        <div class="column" id="image-column">
+            <h3>Random Image</h3>
+            <img src="https://picsum.photos/200" alt="Random Image" id="randomImage" onclick="refreshImage()">
+        </div>
+        <div class="column" id="slider-column">
+            <h3>Slider Move</h3>
+            <input type="range" id="slider" min="0" max="100" value="0" oninput="moveSquare()">
+            <div id="square">200 x 200</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
