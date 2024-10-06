@@ -3,23 +3,22 @@
 <head>
     <title>Bird Collection</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <div class="container">
-        <h1>Assignment 11</h1>
+        <h1>Assignment 9</h1>
         <h2>Classes</h2>
         <div id="bird-list" class="bird-grid"></div>
     </div>
 
     <!-- Modal -->
-    <div id="birdModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-opacity w3-card-4">
-            <header class="w3-container w3-teal">
-                <span onclick="document.getElementById('birdModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+    <div id="birdModal" class="bird-modal">
+        <div class="bird-modal-content bird-animate-opacity bird-card">
+            <header class="bird-modal-header">
+                <span onclick="document.getElementById('birdModal').style.display='none'" class="close-button">&times;</span>
                 <h2 id="birdTitle"></h2>
             </header>
-            <div class="w3-container">
+            <div class="bird-modal-body">
                 <img id="birdImage" alt="Bird Image" class="modal-image">
                 <p id="birdDetails"></p>
             </div>
