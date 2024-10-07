@@ -11,7 +11,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -57,34 +57,34 @@ header {
 /* Media Query for mobile screens */
 @media (max-width: 768px) {
     .navbar ul {
-        display: none;  /* Hide the navigation links on mobile by default */
+        display: none;
         flex-direction: column;
         align-items: flex-start;
-        background-color: var(--header-background);  /* Background color for the dropdown */
+        background-color: var(--header-background);
         position: absolute;
-        top: 60px;  /* Positioning the dropdown below the header */
+        top: 60px;
         right: 0;
         width: 200px;
         padding: 10px;
     }
 
-    /* Show menu when the hamburger is clicked */
+    /* shows menu when the hamburger is clicked */
     .navbar ul.active {
-        display: flex;  /* Make the menu visible */
+        display: flex;
     }
 
     #menuToggle {
-        display: block;  /* Show the hamburger icon on mobile screens */
+        display: block;  /* shows the hamburger icon on mobile screens */
         cursor: pointer;
     }
 
-    /* Styling for the hamburger icon */
+    /* styling for the hamburger icon */
     #menuToggle span {
         display: block;
         width: 25px;
         height: 3px;
         margin: 5px;
-        background-color: var(--text-color);  /* Color for the hamburger lines */
+        background-color: var(--text-color);  /* color for the hamburger lines */
     }
 }
 
@@ -145,7 +145,7 @@ header {
     color: var(--text-color);
 }
 
-/* Add an interaction button */
+/* adds an interaction button */
 .artist-item .listen-now {
     display: block;
     background-color: var(--accent-color);
@@ -281,9 +281,9 @@ header {
 }
 
 .music-item img {
-    width: 100px;  /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
-    object-fit: cover;  /* Ensures the image doesn't get stretched */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 10px;
     margin-right: 20px;
 }
