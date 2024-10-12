@@ -43,19 +43,16 @@
 
     <!-- Fetch and display music data -->
     <script>
-        // Fetch and display music data from music-data.json
         fetch('music-data.json')
             .then(response => response.json())
             .then(data => {
                 const musicList = document.getElementById('music-list');
                 
-                // Iterate over each music item in the JSON data
                 data.forEach(music => {
-                    // Create a list item for each music entry
+
                     const musicItem = document.createElement('li');
                     musicItem.classList.add('music-item');
                     
-                    // Construct the inner HTML for each music item
                     musicItem.innerHTML = `
                         <img src="${music.image}" alt="${music.title}">
                         <div class="music-info">
@@ -66,7 +63,6 @@
                         </div>
                     `;
 
-                    // Append the new item to the music list
                     musicList.appendChild(musicItem);
                 });
             })
