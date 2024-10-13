@@ -29,5 +29,4 @@ function displayIceCreams(iceCreams) {
     });
 }
 
-// Call the function to fetch and display ice creams
 fetchIceCreams();
