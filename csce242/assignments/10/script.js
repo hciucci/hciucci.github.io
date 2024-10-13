@@ -12,7 +12,7 @@ function displayIceCreams(iceCreams) {
         iceCreamDiv.classList.add('ice-cream');
 
         const img = document.createElement('img');
-        img.src = `https://portiaportia.github.io/json/images/ice-creams/${iceCream.image}`;
+        img.src = 'https://portiaportia.github.io/json/images/ice-creams/' + iceCream.image;
         img.alt = iceCream.name;
 
         const overlay = document.createElement('div');
@@ -20,11 +20,8 @@ function displayIceCreams(iceCreams) {
 
         const name = document.createElement('h3');
         name.innerText = iceCream.name;
-        const description = document.createElement('p');
-        description.innerText = iceCream.description;
 
         overlay.appendChild(name);
-        overlay.appendChild(description);
 
         iceCreamDiv.appendChild(img);
         iceCreamDiv.appendChild(overlay);
@@ -32,4 +29,5 @@ function displayIceCreams(iceCreams) {
     });
 }
 
+// Call the function to fetch and display ice creams
 fetchIceCreams();
