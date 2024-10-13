@@ -1,9 +1,10 @@
 // JS for toggling the hamburger menu on mobile
 document.getElementById('menuToggle').addEventListener('click', function () {
-    const navList = document.querySelector('.navbar ul');  // Select the <ul> element
-    navList.classList.toggle('active');  // Toggle the 'active' class
+    const navList = document.querySelector('.navbar ul');
+    navList.classList.toggle('active');  // toggles active class
 });
-// Fetch and display music data
+
+// fetch and display music data
 fetch('music-data.json')
     .then(function(response) {
         return response.json();
@@ -38,3 +39,20 @@ fetch('music-data.json')
     .catch(function(error) {
         console.error('Error fetching the data:', error);
     });
+
+document.querySelectorAll('.listen-now').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var song = this.getAttribute('data-song');
+        var artist = this.getAttribute('data-artist');
+        
+        var musicPlayer = document.getElementById('music-player');
+        var nowPlayingText = document.getElementById('now-playing-text');
+
+        musicPlayer.querySelector('source').src = song;
+        musicPlayer.load();
+        nowPlayingText.textContent = "Now Playing: " + artist;
+
+        // scrolls to music player section
+        document.getElementById('music-player-section').scrollIntoView({ behavior: 'smooth' });
+    });
+});

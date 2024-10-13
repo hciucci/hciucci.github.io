@@ -389,6 +389,33 @@ header {
     background-color: var(--text-heading);
 }
 
+/* Music Player Section */
+#music-player-section {
+    padding: 40px;
+    background-color: var(--header-background);
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid var(--accent-color);
+}
+
+#music-player {
+    margin-top: 20px;
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#music-player audio {
+    width: 100%;
+    max-width: 600px;
+}
+
+#now-playing-text {
+    font-size: 20px;
+    color: var(--text-heading);
+    margin-bottom: 10px;
+}
+
 /* Footer Fix */
 footer {
     margin-top: 40px;
