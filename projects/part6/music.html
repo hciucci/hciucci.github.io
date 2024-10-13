@@ -41,31 +41,4 @@
         <p>&copy; 2024 Haden Ciucci. All rights reserved.</p>
     </footer>
 
-    <!-- Fetch and display music data -->
-    <script>
-        fetch('music-data.json')
-            .then(response => response.json())
-            .then(data => {
-                const musicList = document.getElementById('music-list');
-                
-                data.forEach(music => {
-
-                    const musicItem = document.createElement('li');
-                    musicItem.classList.add('music-item');
-                    
-                    musicItem.innerHTML = `
-                        <img src="${music.image}" alt="${music.title}">
-                        <div class="music-info">
-                            <h3>Song Title: "${music.title}"</h3>
-                            <p><strong>Artist:</strong> ${music.artist}</p>
-                            <p><strong>Duration:</strong> ${music.duration}</p>
-                            <p><strong>Description:</strong> ${music.description}</p>
-                        </div>
-                    `;
-
-                    musicList.appendChild(musicItem);
-                });
-            })
-            .catch(error => console.error('Error fetching the data:', error));
-    </script>
 </body>
