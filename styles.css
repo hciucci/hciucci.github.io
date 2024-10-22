@@ -1,4 +1,4 @@
-/* General Styling */
+/* general styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,7 +27,7 @@ main {
     padding: 20px;
 }
 
-/* Shared Styles for Assignments and Projects */
+/* shared styles for assignments and projects */
 .section {
     max-width: 1200px;
     margin: 0 auto;
@@ -75,24 +75,39 @@ main {
     color: #555;
 }
 
-/* Footer Styling */
+/* project links styling inside the card */
+.project-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;  /* Make the links blue and visible */
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+    color: #0056b3;  /* Darken the link color on hover */
+}
+
+/* override any inheritance from .card */
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* footer styling */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #ffffff;
 }
 
-/* Specific to Assignments Section */
-.assignments {
-    background-color: #fff;
-}
-
-/* Specific to Projects Section */
-.projects {
-    background-color: #f9f9f9; /* Slightly different background for distinction */
-}
-
-/* Media query for responsiveness */
+/* media query for responsiveness */
 @media (max-width: 768px) {
     .list {
         flex-direction: column;
